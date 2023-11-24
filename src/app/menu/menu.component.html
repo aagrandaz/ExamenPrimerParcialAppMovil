@@ -1,0 +1,25 @@
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Nombres:</ion-label>
+      <ion-input [(ngModel)]="nombres" name="nombres" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Email:</ion-label>
+      <ion-input [(ngModel)]="email" name="email" type="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Teléfono:</ion-label>
+      <ion-input [(ngModel)]="telefono" name="telefono" type="tel"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Fecha de Nacimiento:</ion-label>
+      <ion-input [(ngModel)]="fechaNacimiento" name="fechaNacimiento" type="date"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="full" (click)="calcularEdad()">Calcular Edad</ion-button>
+</ion-content>
